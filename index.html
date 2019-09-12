@@ -4,9 +4,112 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+  <body class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="#" width="200" height="100" alt="Логотип города Седона">
+        </a>
+        <ul>
+          <li><a href="ifo.html">информация</a></li>
+          <li><a href="content.html">фото и видео</a></li>
+          <li><a href="map.html">карта штата</a></li>
+          <li><a href="hotels.html">гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="promo">
+        <h1 class="visually-hidden">sedona</h1>
+        <img src="placeholder.jpg" alt="приглашение" width="100" height="100">
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Особенности Седоны</h2>
+        <p>седона - небольшой городок в аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которыс седона круче, чем гранд каньон!</p>
+        <figure class="reason reason-media">
+          <figcaption>
+            <h3>настоящий городок</h3>
+            <p>-№1-</p>
+            <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </figcaption>
+          <p><img src="placeholder.jpg" alt="фото города" width="100" height="100"></p>
+        </figure>
+        <ul class="details">
+          <li>
+            <h3>жильё</h3>
+            <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li>
+            <h3>еда</h3> 
+             <p>всегда заказывайте фирменный бургер, вы не разочаруетесь</p></li>
+          </li>
+          <li>
+           <h3>сувениры</h3>
+            <p>не только китайского, но и местного производства</p>
+          </li>
+        </ul>
+        <figure class="reason reason-media">
+          <p><img src="placeholder.jpg" alt="мост дьявола" width="100" height="100"></p>
+          <figcaption>
+            <h3>там есть мост дьявола</h3>
+            <p>-№2-</p>
+            <p>да, по нему можно пройти!если конечно вы осмелитесь</p>
+          </figcaption>
+        </figure>
+        <ul class="reason">
+          <li>
+            <h3>небольшая площадь</h3>
+            <p>-№3-</p>
+            <p>все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>красивая дорога</h3>
+            <p>-№4-</p>
+            <p>ехать в седону из лас-вегаса совсем нескучно!</p>
+          </li>
+          <li>
+            <h3>мало туристов</h3>
+            <p>-№5-</p>
+            <p>большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search-hotel">
+        <h2>поиск отеля</h2>
+        <p>заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, 
+          и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button>поиск гостиницы в седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="date-arrival">дата заезда:</label>
+          <input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017"><br>
+          <label for="date-departure">дата выезда:</label>
+          <input id="date-departure" type="text" name="date-departure" placeholder="4 июля 2017"><br>
+          <label for="adults-count">взрослые:</label>
+          <input id="adults-count" type="text" name="adults-count" placeholder="- 2 +">
+          <label for="children-count">взрослые:</label>
+          <input id="children-count" type="text" name="adults-count" placeholder="- 0 +">
+          <button class="search">найти</button>
+        </form>
+        </section>
+      </main>
+      <footer>
+        <span>#visitsedona</span>
+          <ul>
+            <li>
+              <a href="">в контакте</a>
+            </li>
+            <li>
+              <a href="">фэйсбук</a>
+            </li>
+            <li>
+              <a href="">ютуб</a>
+            </li>
+          </ul>
+        <span>website by</span>
+        <img src="placeholder.jpg" alt="логотип HTML Academy" width="100" height="100">
+      </footer>
   </body>
 </html>
+
