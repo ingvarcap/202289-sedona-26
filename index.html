@@ -81,21 +81,21 @@
         <p>Укажите предполагаемые даты поездки, 
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>поиск гостиницы в седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
           <label for="date-arrival">дата заезда:</label>
           <input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017"><br>
           <label for="date-departure">дата выезда:</label>
           <input id="date-departure" type="text" name="date-departure" placeholder="4 июля 2017"><br>
           <label for="adults-count">взрослые:</label>
           <input id="adults-count" type="text" name="adults-count" placeholder="- 2 +">
-          <label for="children-count">взрослые:</label>
+          <label for="children-count">дети:</label>
           <input id="children-count" type="text" name="adults-count" placeholder="- 0 +">
-          <button class="search">найти</button>
+          <a href="#">найти</a>
         </form>
         </section>
       </main>
       <footer>
-        <span>#visitsedona</span>
+        <a href="#" aria-label="седона в интернете">#visitsedona</a>
           <ul>
             <li>
               <a href="#" aria-label="седона в контакте">
@@ -114,7 +114,9 @@
             </li>
           </ul>
         <span> website by</span>
-        <img src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
+        <a href="#">
+          <img src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
+        </a>
       </footer>
   </body>
 </html>
