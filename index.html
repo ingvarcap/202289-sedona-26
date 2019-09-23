@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="container">
     <header class="main-header">
@@ -10,11 +13,11 @@
         <a class="main-header-logo">
           <img src="img/svg-sedona/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
-        <ul>
-          <li><a href="ifo.html">информация</a></li>
+        <ul class="site-navigation">
+          <li><a href="#" class="site-navigation-active-link">информация</a></li>
           <li><a href="content.html">фото и видео</a></li>
           <li><a href="map.html">карта штата</a></li>
-          <li><a href="hotels.html">гостиницы</a></li>
+          <li><a href="sedona-hotels.html">гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -25,11 +28,11 @@
       </section>
       <section class="features">
         <h2 class="visually-hidden">Особенности Седоны</h2>
-        <p>седона - небольшой городок в аризоне, заслуживающий большего!</p>
+        <p class="intro">седона - небольшой городок в аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которыс седона круче, чем гранд каньон!</p>
         <figure class="reason reason-media">
           <figcaption>
-            <h3>настоящий городок</h3>
+            <span>настоящий городок</span>
             <p>-№1-</p>
             <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </figcaption>
@@ -37,39 +40,39 @@
         </figure>
         <ul class="details">
           <li>
-            <h3>жильё</h3>
+            <span>жильё</span>
             <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
-            <h3>еда</h3> 
+            <span>еда</span>
              <p>всегда заказывайте фирменный бургер, вы не разочаруетесь</p></li>
           </li>
           <li>
-           <h3>сувениры</h3>
+           <span>сувениры</span>
             <p>не только китайского, но и местного производства</p>
           </li>
         </ul>
         <figure class="reason reason-media">
           <p><img src="img/photo-canyon.jpg" alt="мост дьявола" width="800" height="256"></p>
           <figcaption>
-            <h3>там есть мост дьявола</h3>
+            <span>там есть мост дьявола</span>
             <p>-№2-</p>
             <p>да, по нему можно пройти!если конечно вы осмелитесь</p>
           </figcaption>
         </figure>
-        <ul class="reason">
+        <ul class="reason reason-list">
           <li>
-            <h3>небольшая площадь</h3>
+            <span>небольшая площадь</span>
             <p>-№3-</p>
             <p>все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>красивая дорога</h3>
+            <span>красивая дорога</span>
             <p>-№4-</p>
             <p>ехать в седону из лас-вегаса совсем нескучно!</p>
           </li>
           <li>
-            <h3>мало туристов</h3>
+            <span>мало туристов</span>
             <p>-№5-</p>
             <p>большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -78,9 +81,10 @@
       <section class="search-hotel">
         <h2>поиск отеля</h2>
         <p>заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, 
+        <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>поиск гостиницы в седоне</button>
+        <button class="btn">поиск гостиницы в седоне</button>
+        <img src="img/map.jpg">
         <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
           <label for="date-arrival">дата заезда:</label>
           <input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017"><br>
@@ -90,33 +94,35 @@
           <input id="adults-count" type="text" name="adults-count" placeholder="- 2 +">
           <label for="children-count">дети:</label>
           <input id="children-count" type="text" name="adults-count" placeholder="- 0 +">
-          <a href="#">найти</a>
+          <button type="submit">найти</button>
         </form>
         </section>
       </main>
       <footer>
-        <a href="#" aria-label="седона в интернете">#visitsedona</a>
-          <ul>
+        <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
+          <ul class="social-list">
             <li>
-              <a href="#" aria-label="седона в контакте">
+              <a href="#" class="social-icon" aria-label="седона в контакте">
                 <img src="img/svg-sedona/twitter.svg" width="17" height="15" alt="твиттер">
               </a>
             </li>
             <li>
-              <a href="#" aria-label="седона в фейсбуке">
-                <img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="фейсбук">    
+              <a href="#" class="social-icon" aria-label="седона в фейсбуке">
+                <img class="social-svg" src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="фейсбук">
               </a>
             </li>
             <li>
-              <a href="#" aria-label="седона в фейсбуке">
-                <img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="ютуб">  
+              <a href="#" class="social-icon" aria-label="седона в фейсбуке">
+                <img class="social-svg" src="img/svg-sedona/youtube.svg" width="20" height="16" alt="ютуб">
               </a>
             </li>
           </ul>
-        <span> website by</span>
-        <a href="#">
-          <img src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
-        </a>
+          <div class="htmlacademy">
+            <span> website by</span>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="social-svg" src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
+            </a>
+          </div>
       </footer>
   </body>
 </html>
