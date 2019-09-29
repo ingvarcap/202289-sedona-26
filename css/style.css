@@ -10,16 +10,18 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
   background-color: #f2f2f2;
+  width: 1280px;
+  text-transform: uppercase;
   background-position: top center;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 0;
 }
 
 a {
@@ -36,6 +38,11 @@ button {
   text-transform: uppercase;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
@@ -50,16 +57,34 @@ button {
 	overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /*HEADER*/
 
 .main-navigation {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }
 
+.main-header-logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 70px);
+  z-index: 1;
+}
+
 .site-navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -82,12 +107,27 @@ button {
 /*PROMO*/
 
 .promo {
+  position: relative;
   background-image: url(../img/background-photo.jpg);
+  background-position-y: 20%;
+  height: 510px;
   background-repeat: no-repeat;
   background-color: #000000;
 }
 
+.banner-welcome {
+  position: absolute;
+  top: 76px;
+  left: 372px;
+}
+
 /*FEATURES*/
+
+.features-reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .intro {
   font-size: 21px;
@@ -103,11 +143,12 @@ button {
 
 .reason {
   background-color: #81b3d2;
+  margin: 0;
+  padding: 0;
 }
 
-.reason-media:first-child {
-  background-image: url(../img/photo-sity.jpg);
-  background-repeat: no-repeat;
+.reason-media {
+  display: flex;
 }
 
 .reason-media:first-child {
@@ -131,14 +172,24 @@ button {
 }
 
 .details {
+  display: flex;
+  text-align: center;
   background-color: #ffffff;
 }
 
 .reason-list {
+  display: flex;
+  text-align: center;
   background-color: #eeeeee;
 }
 
 /*SEARCH-HOTEL*/
+
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .search-hotel .btn {
   color: #ffffff;
@@ -156,6 +207,11 @@ button {
 
 /*FOOTER*/
 
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -163,7 +219,8 @@ button {
   color: #000000;
 }
 
-.social-list li {
+.social-list  {
+  display: flex;
   list-style: none;
 }
 
@@ -194,6 +251,8 @@ button {
 /*CHOICE*/
 
 .choice {
+  display: flex;
+  justify-content: space-around;
   background-color: #000000;
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
@@ -207,6 +266,13 @@ fieldset {
 legend {
   font-size: 16px;
   font-weight: 700;
+}
+
+.filter-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
 }
 
 .filter-price h3 {
@@ -279,7 +345,15 @@ legend {
   color: #81b3d2;
 }
 
+.breadcamps {
+  display: flex;
+}
+
 /*HOTELS*/
+
+.hotels {
+  display: flex;
+}
 
 .hotels-description-header {
   font-size: 21px;
@@ -287,6 +361,7 @@ legend {
 }
 
 .hotels-description span {
+  display: inline-block;
   color: #333333;
 }
 
@@ -303,9 +378,21 @@ legend {
   border: none;
 }
 
+.rank {
+  margin-left: auto;
+}
+
 .rank span {
   color: #666666;
 }
+
+.hotels-description {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 
