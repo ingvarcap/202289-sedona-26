@@ -15,10 +15,10 @@
             <img src="img/svg-sedona/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
           </a>
           <ul class="site-navigation">
-            <li><a href="#" class="site-navigation-active-link">информация</a></li>
-            <li><a href="content.html">фото и видео</a></li>
-            <li><a href="map.html">карта штата</a></li>
-            <li><a href="sedona-hotels.html">гостиницы</a></li>
+            <li><a href="#" class="site-navigation-link site-navigation-active-link">информация</a></li>
+            <li><a href="content.html" class="site-navigation-link" >фото и видео</a></li>
+            <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
+            <li><a href="sedona-hotels.html" class="site-navigation-link">гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -26,110 +26,139 @@
         <section class="promo">
           <h1 class="visually-hidden">sedona</h1>
           <div class="banner-welcome">
-            <img src="img/welcome.png" alt="приглашение" width="459" height="353">
+            <img src="img/welcome.png" alt="приглашение" width="459" height="593">
           </div>
         </section>
         <section class="features">
           <h2 class="visually-hidden">Особенности Седоны</h2>
           <div class="features-reason">
             <p class="intro">седона - небольшой городок в аризоне, заслуживающий большего!</p>
-            <p>Рассмотрим 5 причин, по которыс седона круче, чем гранд каньон!</p>
+            <p class="intro-reason">Рассмотрим 5 причин, по которыс седона круче, чем гранд каньон!</p>
           </div>
           <figure class="reason reason-media">
             <figcaption>
-              <span>настоящий городок</span>
-              <p>-№1-</p>
-              <p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3>настоящий<br> городок</h3>
+              <p class="reason-media-number">-№1-</p>
+              <p class="reason-media-description">седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
             </figcaption>
             <img src="img/photo-sity.jpg" alt="фото города" width="800" height="256">
           </figure>
-          <ul class="details">
+          <ul class="recommendation">
             <li>
-              <span>жильё</span>
+              <h3>жильё</h3>
               <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
-              <span>еда</span>
+              <h3>еда</h3>
               <p>всегда заказывайте фирменный бургер, вы не разочаруетесь</p></li>
             </li>
             <li>
-            <span>сувениры</span>
+              <h3>сувениры</h3>
               <p>не только китайского, но и местного производства</p>
             </li>
           </ul>
           <figure class="reason reason-media">
             <img src="img/photo-canyon.jpg" alt="мост дьявола" width="800" height="256">
             <figcaption>
-              <span>там есть мост дьявола</span>
-              <p>-№2-</p>
-              <p>да, по нему можно пройти!если конечно вы осмелитесь</p>
+              <h3>там есть<br> мост дьявола</h3>
+              <p class="reason-media-number">-№2-</p>
+              <p>да, по нему можно пройти!если конечно<br> вы осмелитесь</p>
             </figcaption>
           </figure>
           <ul class="reason reason-list">
             <li>
-              <span>небольшая площадь</span>
-              <p>-№3-</p>
-              <p>все достопримечательности находятся очень близко</p>
+              <h3>небольшая<br> площадь</h3>
+              <p class="reason-number">-№3-</p>
+              <p class="interpretation">все достопримечательности находятся очень близко</p>
             </li>
             <li>
-              <span>красивая дорога</span>
-              <p>-№4-</p>
-              <p>ехать в седону из лас-вегаса совсем нескучно!</p>
+              <h3>красивая<br> дорога</h3>
+              <p class="reason-number">-№4-</p>
+              <p class="interpretation">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li>
-              <span>мало туристов</span>
-              <p>-№5-</p>
-              <p>большинство едет в гранд каньон и толпится там</p>
+              <h3>мало<br> туристов</h3>
+              <p class="reason-number">-№5-</p>
+              <p class="interpretation">большинство едет в гранд каньон<br> и толпится там</p>
             </li>
           </ul>
         </section>
         <section class="search-hotel">
-          <h2 class="visually-hidden">поиск отеля</h2>
-          <p>заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки,
+          <h2 class="search-hotel-promo">заинтересовались?</h2>
+          <p class="search-hotel-guide">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="btn">поиск гостиницы в седоне</button>
-          <img src="img/map.jpg">
-          <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-            <label for="date-arrival">дата заезда:</label>
-            <input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017"><br>
-            <label for="date-departure">дата выезда:</label>
-            <input id="date-departure" type="text" name="date-departure" placeholder="4 июля 2017"><br>
-            <label for="adults-count">взрослые:</label>
-            <input id="adults-count" type="text" name="adults-count" placeholder="- 2 +">
-            <label for="children-count">дети:</label>
-            <input id="children-count" type="text" name="adults-count" placeholder="- 0 +">
-            <button type="submit">найти</button>
-          </form>
-          </section>
+          <button class="search-btn" type="submit">поиск гостиницы в седоне</button>
+          <div class="map-yandex">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CGHUET-i" width="1200" height="595" frameborder="1" allowfullscreen="true"></iframe>
+          </div>
+        </section>
         </main>
         <footer>
-          <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
-            <ul class="social-list">
-              <li>
-                <a href="#" class="social-icon" aria-label="седона в контакте">
-                  <img src="img/svg-sedona/twitter.svg" width="17" height="15" alt="твиттер">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social-icon" aria-label="седона в фейсбуке">
-                  <img class="social-svg" src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="фейсбук">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="social-icon" aria-label="седона в фейсбуке">
-                  <img class="social-svg" src="img/svg-sedona/youtube.svg" width="20" height="16" alt="ютуб">
-                </a>
-              </li>
-            </ul>
-            <div class="htmlacademy">
-              <span> website by</span>
-              <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="social-svg" src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
-              </a>
+          <div class="footer-wrapper">
+            <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-icon social-twitter" aria-label="седона в твиттере"></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon social-fb" aria-label="седона в фейсбуке"></a>
+                </li>
+                <li>
+                  <a href="#" class="social-icon social-youtube" aria-label="седона на ютуб"></a>
+                </li>
+              </ul>
+              <div class="htmlacademy">
+                <span> website by</span>
+                <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+              </div>
             </div>
         </footer>
-    </div>
+        <section class="modal-search-form">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="wrapper">
+                <label class="search-form-date" for="date-on">дата заезда:</label>
+                <input class="search-form-date" id="date-on" type="text"  placeholder="24 апреля 2017">
+                <button class="search-date-btn btn-on" type="button">
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+              </p>
+              <p class="wrapper">
+                <label class="search-form-date" for="date-off">дата выезда:</label>
+                <input class="search-form-date" id="date-off" type="text"  placeholder="4 июля 2017">
+                <button class="search-date-btn btn-off" type="button">
+                  <span class="visually-hidden">Календарь</span>
+                </button>
+              </p>
+              <div class="search-form-total-number">
+                <p>
+                  <label class="search-form-count" for="search-form-adults">взрослые:</label>
+                  <input class="search-form-count-adults" id="search-form-adults" type="text"  placeholder="2">
+                  <button class="btn-count btn-down-adults" type="submit"></button>
+                  <button class="btn-count btn-up-adults" type="submit"></button>
+                </p>
+                <p>
+                  <label class="search-form-count" for="search-form-children">дети:</label>
+                  <input class="search-form-count-children" id="search-form-children" type="text"  placeholder="0">
+                  <button class="btn-count btn-down-children" type="submit"></button>
+                  <button class="btn-count btn-up-children" type="submit"></button>
+                </p>
+              </div>
+              <a class="search-form-link">найти</a>
+            </form>
+        </section>
+    <script>
+      var link = document.querySelector(".search-btn");
+      var popup = document.querySelector(".modal-search-form");
+      var close = popup.querySelector(".search-form-link");
+      link.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.add(".modal-show");
+      });
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove(".modal-show");
+      });
+    </script>
   </body>
 </html>
 

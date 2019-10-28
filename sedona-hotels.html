@@ -7,187 +7,190 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     </head>
-    <body class="container">
+    <body>
+      <div class="container">
         <header>
             <nav class="main-navigation">
                 <a href="index.html" class="main-header-logo">
                     <img src="img/svg-sedona/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
                 </a>
                 <ul class="site-navigation">
-                  <li><a href="index.html">информация</a></li>
-                  <li><a href="content.html">фото и видео</a></li>
-                  <li><a href="map.html">карта штата</a></li>
-                  <li><a>гостиницы</a></li>
+                  <li><a href="#" class="site-navigation-link">информация</a></li>
+                  <li><a href="content.html" class="site-navigation-link" >фото и видео</a></li>
+                  <li><a href="map.html" class="site-navigation-link">карта штата</a></li>
+                  <li><a href="sedona-hotels.html" class="site-navigation-link site-navigation-active-link">гостиницы</a></li>
                 </ul>
               </nav>
         </header>
         <main>
             <section class="choice">
                 <h2 class="visually-hidden">выбор отеля</h2>
-                <div class="bonus">
-                    <h3 class="visually-hidden">инфраструктура</h3>
-                    <form class="choice-form" action="https://echo.htmlacademy.ru"
-                        method="post">
-                        <fieldset>
-                            <legend>инфраструктура:</legend>
-                            <p>
-                                <input type="checkbox" name="bonus1" id="bonus1" checked>
-                                <label for="bonus1">
-                                  "бассейн"
-                                </label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="bonus2" id="bonus2">
-                                <label for="bonus3">
-                                  "парковка"
-                                </label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="bonus3" id="bonus3">
-                                <label for="bonus3">
-                                  "wi-fi"
-                                </label>
-                            </p>
-                        </fieldset>
-                    </form>
+                <div class="bonus-and-type">
+                  <div class="bonus">
+                      <h3 class="visually-hidden">инфраструктура</h3>
+                      <form class="choice-form" action="https://echo.htmlacademy.ru"
+                          method="post">
+                          <fieldset>
+                              <legend>инфраструктура:</legend>
+                              <p class="bonus">
+                                  <input type="checkbox" name="bonus1" id="bonus1" checked>
+                                  <label for="bonus1">
+                                    бассейн
+                                  </label>
+                              </p>
+                              <p class="bonus">
+                                  <input type="checkbox" name="bonus2" id="bonus2">
+                                  <label for="bonus2">
+                                    парковка
+                                  </label>
+                              </p>
+                              <p class="bonus">
+                                  <input type="checkbox" name="bonus3" id="bonus3">
+                                  <label for="bonus3">
+                                    wi-fi
+                                  </label>
+                              </p>
+                          </fieldset>
+                      </form>
+                  </div>
+                  <div class="type-of-housing">
+                      <h3 class="visually-hidden">тип жилья</h3>
+                      <form class="choice-form" action="https://echo.htmlacademy.ru"     method="post">
+                          <fieldset class="choice-form-field">
+                              <legend>тип жилья:</legend>
+                              <p class="type">
+                                  <input type="checkbox" name="type1" id="type1" checked>
+                                  <label for="type1">
+                                    гостиница
+                                  </label>
+                              </p>
+                              <p class="type">
+                                  <input type="checkbox" name="type2" id="type2" checked>
+                                  <label for="type2">
+                                    мотель
+                                  </label>
+                              </p>
+                              <p class="type">
+                                  <input type="checkbox" name="type3" id="type3" checked>
+                                  <label for="type3">
+                                    апартаменты
+                                  </label>
+                              </p>
+                          </fieldset>
+                      </form>
+                  </div>
                 </div>
-                <div class="type-of-housing">
-                    <h3 class="visually-hidden">тип жилья</h3>
-                    <form class="choice-form" action="https://echo.htmlacademy.ru"     method="post">
-                        <fieldset>
-                            <legend>тип жилья:</legend>
-                            <p>
-                                <input type="checkbox" name="type1" id="type1" checked>
-                                <label for="type1">
-                                  "гостиница"
-                                </label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="type2" id="type2" checked>
-                                <label for="type2">
-                                  "мотель"
-                                </label>
-                            </p>
-                            <p>
-                                <input type="checkbox" name="type3" id="type3" checked>
-                                <label for="type3">
-                                  "апартаменты"
-                                </label>
-                            </p>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="filter-price">
-                    <h3>стоимость в сутки(р):</h3>
-                    <div class="price-control">
-                        <input class="min-price" type="text" value="0">от 0 |
-                        <input class="max-price" type="text" value="0">до 3000
+                <div class="filter-range">
+                  <div class="filter-range-wrapper">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                     </div>
                     <div class="range-controls">
-                        <div class="scale">
-                            <div class="bar">
-                                <div class="toggle filter-button"></div>
-                                <div class="toggle filter-button"></div>
-                            </div>
-                        </div>
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
                     </div>
-                    <div class="show">
-                        <button class="btn">показать</button>
+                    <button class="btn-transparent" type="submit">Показать</button>
                     </div>
-                </div>
-            </section>
+                  </div>
+              </section>
             <section class="sorting">
-                <div class="breadcamps">
-                    <span class="sorting-results">
-                        найдено: 3
-                    </span>
-                    <span>
-                        сортировка:
-                    </span>
-                    <ul class="sorting-list">
-                        <li>по цене</li>
-                        <li><button class="sorting-btn">по типу</button></li>
-                        <li><button class="sorting-btn">по рейтингу</button></li>
-                    </ul>
+                <div class="sorting-results">
+                    <span class="sorting-results-count">найдено: 3</span>
+                    <span class="sorting-list-title"> сортировка:</span>
+                    <div class="sorting-list">
+                      <button class="sorting-visited-btn" type="submit">по цене</button>
+                      <button class="sorting-btn" type="submit">по типу</button>
+                      <button class="sorting-btn" type="submit">по рейтингу</button>
+                    </div>
+                    <div class="sorting-up-down">
+                      <button class="sorting-up-down sorting-up sorting-up-active" type="submit"></button>
+                      <button class="sorting-up-down sorting-down" type="submit"></button>
+                    </div>
                 </div>
                 <div class="hotels">
                   <figure class="hotels-description">
                     <img class="hotels-img" src="img/hotel-1.jpg" width="135" height="90" alt="гостиница">
                     <figcaption>
-                      <h3 class="hotels-header">Amara Resort & Spa</h3>
-                      <span>гостиница</span>
-                      <span>от 4000 р.</span>
+                      <a class="hotels-header">Amara Resort & Spa</a>
+                      <div class="hotels-description-price">
+                        <span>гостиница</span>
+                        <span>от 4000 р.</span>
+                      </div>
                       <div class="order">
-                        <a class="hotels-description-link" href="#">подробнее</a>
-                        <button class="hotels-description-order" type="submit">забронировать</button>
+                        <a class="hotels-order-link" href="#">подробнее</a>
+                        <button class="hotels-order-btn" type="submit">забронировать</button>
                       </div>
                     </figcaption>
                   </figure>
-                    <div class="rank">
-                        <span>рейтинг:8,5</span>
+                    <div class="rank rank-1">
+                        <span>рейтинг: 8,5</span>
                     </div>
                 </div>
                 <div class="hotels">
                     <figure class="hotels-description">
                         <img class="hotels-img" src="img/hotel-2.jpg" width="135" height="90" alt="гостиница">
                         <figcaption>
-                          <h3 class="hotels-header">Desert Quail Inn</h3>
-                          <span>мотель</span>
-                          <span>от 3000 р.</span>
-                          <div class="order">
-                            <a class="hotels-description-link" href="#">подробнее</a>
-                            <button class="hotels-description-order" type="submit">забронировать</button>
+                          <a class="hotels-header">Desert Quail Inn</a>
+                          <div class="hotels-description-price">
+                            <span>мотель</span>
+                            <span>от 3000 р.</span>
+                          </div>
+                          <div class="hotels-order">
+                            <a class="hotels-order-link" href="#">подробнее</a>
+                            <button class="hotels-order-btn" type="submit">забронировать</button>
                           </div>
                         </figcaption>
                       </figure>
-                    <div class="rank">
-                        <span>рейтинг:8,9</span>
+                    <div class="rank rank-2">
+                        <span>рейтинг: 8,9</span>
                     </div>
                 </div>
                 <div class="hotels">
                     <figure class="hotels-description">
                         <img class="hotels-img" src="img/hotel-3.jpg" width="135" height="90" alt="гостиница">
                         <figcaption>
-                          <h3 class="hotels-header">Desert Quail Inn</h3>
-                          <span>апартаменты</span>
-                          <span>от 2000 р.</span>
+                          <a class="hotels-header">Desert Quail Inn</a>
+                          <div class="hotels-description-price">
+                            <span>апартаменты</span>
+                            <span>от 2000 р.</span>
+                          </div>
                           <div class="order">
-                            <a class="hotels-description-link" href="#">подробнее</a>
-                            <button class="hotels-description-order" type="submit">забронировать</button>
+                            <a class="hotels-order-link" href="#">подробнее</a>
+                            <button class="hotels-order-btn" type="submit">забронировать</button>
                           </div>
                         </figcaption>
                       </figure>
-                    <div class="rank">
-                        <span>рейтинг:9,2</span>
+                    <div class="rank rank-3">
+                        <span>рейтинг: 9,2</span>
                     </div>
                 </div>
             </section>
             <footer>
-              <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
-                <ul class="social-list">
-                  <li>
-                    <a href="#" class="social-icon" aria-label="седона в контакте">
-                      <img src="img/svg-sedona/twitter.svg" width="17" height="15" alt="твиттер">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-icon" aria-label="седона в фейсбуке">
-                      <img class="social-svg" src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="фейсбук">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-icon" aria-label="седона в фейсбуке">
-                      <img class="social-svg" src="img/svg-sedona/youtube.svg" width="20" height="16" alt="ютуб">
-                    </a>
-                  </li>
-                </ul>
-                <div class="htmlacademy">
-                  <span> website by</span>
-                  <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img class="social-svg" src="img/svg-sedona/logo-htmlacademy.svg" alt="логотип HTML Academy" width="115" height="41">
-                  </a>
-                </div>
-            </footer>
-        </main>
+                <div class="footer-wrapper footer-wrapper-2">
+                  <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
+                    <ul class="social-list">
+                      <li>
+                        <a href="#" class="social-icon social-twitter" aria-label="седона в твиттере"></a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-icon social-fb" aria-label="седона в фейсбуке"></a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-icon social-youtube" aria-label="седона на ютуб"></a>
+                      </li>
+                    </ul>
+                    <div class="htmlacademy">
+                      <span> website by</span>
+                      <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+                    </div>
+                  </div>
+              </footer>
+          </main>
+        </div>
     </body>
 </html >
