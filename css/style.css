@@ -986,10 +986,6 @@ footer {
 /*ФОРМА ПОИСКА*/
 
 .modal-search-form {
-  display: none;
-}
-
-.modal-show {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1004,6 +1000,10 @@ footer {
   padding: 55px;
   margin-left: -285px;
   z-index: 2;
+}
+
+.modal-show {
+  display: block;
 }
 
 .search-form p {
