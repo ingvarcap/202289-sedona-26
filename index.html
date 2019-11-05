@@ -32,14 +32,14 @@
         <section class="features">
           <h2 class="visually-hidden">Особенности Седоны</h2>
           <div class="features-reason">
-            <p class="intro">седона - небольшой городок в аризоне, заслуживающий большего!</p>
-            <p class="intro-reason">Рассмотрим 5 причин, по которыс седона круче, чем гранд каньон!</p>
+            <p class="intro">седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
+            <p class="intro-reason">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
           </div>
           <figure class="reason reason-media">
             <figcaption>
-              <h3>настоящий<br> городок</h3>
-              <p class="reason-media-number">-№1-</p>
-              <p class="reason-media-description">седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+              <h3>настоящий городок</h3>
+              <p class="reason-media-number">&mdash; №1 &mdash;</p>
+              <p class="reason-media-description">седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
             </figcaption>
             <img src="img/photo-sity.jpg" alt="фото города" width="800" height="256">
           </figure>
@@ -61,25 +61,25 @@
             <img src="img/photo-canyon.jpg" alt="мост дьявола" width="800" height="256">
             <figcaption>
               <h3>там есть<br> мост дьявола</h3>
-              <p class="reason-media-number">-№2-</p>
-              <p>да, по нему можно пройти!если конечно<br> вы осмелитесь</p>
+              <p class="reason-media-number">&mdash; №2 &mdash;</p>
+              <p class="reason-media-description">да, по нему можно пройти! если конечно вы осмелитесь</p>
             </figcaption>
           </figure>
           <ul class="reason reason-list">
             <li>
-              <h3>небольшая<br> площадь</h3>
-              <p class="reason-number">-№3-</p>
+              <h3>небольшая площадь</h3>
+              <p class="reason-number">&mdash; №3 &mdash;</p>
               <p class="interpretation">все достопримечательности находятся очень близко</p>
             </li>
             <li>
-              <h3>красивая<br> дорога</h3>
-              <p class="reason-number">-№4-</p>
+              <h3>красивая дорога</h3>
+              <p class="reason-number">&mdash; №4 &mdash;</p>
               <p class="interpretation">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li>
-              <h3>мало<br> туристов</h3>
-              <p class="reason-number">-№5-</p>
-              <p class="interpretation">большинство едет в гранд каньон<br> и толпится там</p>
+              <h3>мало туристов</h3>
+              <p class="reason-number">&mdash; №5 &mdash;</p>
+              <p class="interpretation interpretation-last">большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -91,12 +91,46 @@
           <div class="map-yandex">
             <iframe src="https://yandex.ru/map-widget/v1/-/CGHUET-i" width="1200" height="595"></iframe>
           </div>
-        </section>
+          <div class="modal-search-form">
+              <h2 class="visually-hidden">Форма поиска</h2>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="wrapper">
+                  <label class="search-form-date" for="date-on">дата заезда:</label>
+                  <input class="search-form-date" id="date-on" type="text"  placeholder="24 апреля 2017">
+                  <button class="search-date-btn btn-on" type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </p>
+                <p class="wrapper">
+                  <label class="search-form-date" for="date-off">дата выезда:</label>
+                  <input class="search-form-date" id="date-off" type="text"  placeholder="4 июля 2017">
+                  <button class="search-date-btn btn-off" type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </p>
+                <div class="search-form-total-number">
+                  <p>
+                    <label class="search-form-count search-form-count-adults" for="search-form-adults">взрослые:</label>
+                    <input class="search-form-count-adults" id="search-form-adults" type="text"  placeholder="2">
+                    <button class="btn-count btn-down-adults" type="submit"></button>
+                    <button class="btn-count btn-up-adults" type="submit"></button>
+                  </p>
+                  <p>
+                    <label class="search-form-count search-form-count-children" for="search-form-children">дети:</label>
+                    <input class="search-form-count-children" id="search-form-children" type="text"  placeholder="0">
+                    <button class="btn-count btn-down-children" type="submit"></button>
+                    <button class="btn-count btn-up-children" type="submit"></button>
+                  </p>
+                </div>
+                <a class="search-form-link">найти</a>
+              </form>
+            </div>
+          </section>
         </main>
         <footer>
           <div class="footer-wrapper">
             <a class="hashtag" href="#" aria-label="седона в интернете">#visitsedona</a>
-              <ul class="social-list">
+            <ul class="social-list">
                 <li>
                   <a href="#" class="social-icon social-twitter" aria-label="седона в твиттере"></a>
                 </li>
@@ -113,54 +147,7 @@
               </div>
             </div>
         </footer>
-        <section class="modal-search-form">
-            <h2 class="visually-hidden">Форма поиска</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="wrapper">
-                <label class="search-form-date" for="date-on">дата заезда:</label>
-                <input class="search-form-date" id="date-on" type="text"  placeholder="24 апреля 2017">
-                <button class="search-date-btn btn-on" type="button">
-                  <span class="visually-hidden">Календарь</span>
-                </button>
-              </p>
-              <p class="wrapper">
-                <label class="search-form-date" for="date-off">дата выезда:</label>
-                <input class="search-form-date" id="date-off" type="text"  placeholder="4 июля 2017">
-                <button class="search-date-btn btn-off" type="button">
-                  <span class="visually-hidden">Календарь</span>
-                </button>
-              </p>
-              <div class="search-form-total-number">
-                <p>
-                  <label class="search-form-count" for="search-form-adults">взрослые:</label>
-                  <input class="search-form-count-adults" id="search-form-adults" type="text"  placeholder="2">
-                  <button class="btn-count btn-down-adults" type="submit"></button>
-                  <button class="btn-count btn-up-adults" type="submit"></button>
-                </p>
-                <p>
-                  <label class="search-form-count" for="search-form-children">дети:</label>
-                  <input class="search-form-count-children" id="search-form-children" type="text"  placeholder="0">
-                  <button class="btn-count btn-down-children" type="submit"></button>
-                  <button class="btn-count btn-up-children" type="submit"></button>
-                </p>
-              </div>
-              <a class="search-form-link">найти</a>
-            </form>
-        </section>
     </div>
-
-    <script>
-      var link = document.querySelector(".search-btn");
-      var popup = document.querySelector(".modal-search-form");
-      var close = popup.querySelector(".search-form-link");
-      link.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.add(".modal-show");
-      });
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove(".modal-show");
-      });
-    </script>
+    <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>
